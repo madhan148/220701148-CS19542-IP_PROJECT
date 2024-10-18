@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tour Packages</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicle Booking</a></li>
+                    <li><a href="rooms.html">Room Booking</a></li>
+                    <li><a href="flights.html">Flight Booking</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="packages" class="section">
+        <div class="container">
+            <h2>Choose Your Tour Package</h2>
+
+            <!-- Package 1: European Tour -->
+            <div class="package-card">
+                <img src="europeantour.jpeg" alt="European Tour" class="package-image">
+                <h3>European Tour</h3>
+                <p>10 days in France, Italy, and Germany.</p>
+
+                <!-- Booking form for European Tour -->
+                <form id="european-tour-form">
+                    <label for="user-name-europe">Name:</label>
+                    <input type="text" id="user-name-europe" placeholder="Enter your name" required>
+                    <br>
+                    <label for="user-email-europe">Email:</label>
+                    <input type="email" id="user-email-europe" placeholder="Enter your email" required>
+                    <br>
+                    <label for="user-phone-europe">Phone Number:</label>
+                    <input type="tel" id="user-phone-europe" placeholder="Enter your phone number" required>
+                    <br>
+                    <label for="travel-date-europe">Travel Date:</label>
+                    <input type="date" id="travel-date-europe" required>
+                    <br>
+                    <input type="hidden" value="European Tour" id="package-name-europe">
+                    <button class="btn-primary" type="submit">Book European Tour</button>
+                </form>
+            </div>
+
+            <!-- Package 2: Asian Adventure -->
+            <div class="package-card">
+                <img src="asianadventure.jpeg" alt="Asian Adventure" class="package-image">
+                <h3>Asian Adventure</h3>
+                <p>7 days in Japan, China, and Thailand.</p>
+
+                <!-- Booking form for Asian Adventure -->
+                <form id="asian-adventure-form">
+                    <label for="user-name-asia">Name:</label>
+                    <input type="text" id="user-name-asia" placeholder="Enter your name" required>
+                    <br>
+                    <label for="user-email-asia">Email:</label>
+                    <input type="email" id="user-email-asia" placeholder="Enter your email" required>
+                    <br>
+                    <label for="user-phone-asia">Phone Number:</label>
+                    <input type="tel" id="user-phone-asia" placeholder="Enter your phone number" required>
+                    <br>
+                    <label for="travel-date-asia">Travel Date:</label>
+                    <input type="date" id="travel-date-asia" required>
+                    <br>
+                    <input type="hidden" value="Asian Adventure" id="package-name-asia">
+                    <button class="btn-primary" type="submit">Book Asian Adventure</button>
+                </form>
+            </div>
+
+            <!-- Package 3: Tropical Getaway -->
+            <div class="package-card">
+                <img src="tropical.jpeg" alt="Tropical Getaway" class="package-image">
+                <h3>Tropical Getaway</h3>
+                <p>Relax for 5 days in the Maldives and Bali.</p>
+
+                <!-- Booking form for Tropical Getaway -->
+                <form id="tropical-getaway-form">
+                    <label for="user-name-tropical">Name:</label>
+                    <input type="text" id="user-name-tropical" placeholder="Enter your name" required>
+                    <br>
+                    <label for="user-email-tropical">Email:</label>
+                    <input type="email" id="user-email-tropical" placeholder="Enter your email" required>
+                    <br>
+                    <label for="user-phone-tropical">Phone Number:</label>
+                    <input type="tel" id="user-phone-tropical" placeholder="Enter your phone number" required>
+                    <br>
+                    <label for="travel-date-tropical">Travel Date:</label>
+                    <input type="date" id="travel-date-tropical" required>
+                    <br>
+                    <input type="hidden" value="Tropical Getaway" id="package-name-tropical">
+                    <button class="btn-primary" type="submit">Book Tropical Getaway</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Travel with Us. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

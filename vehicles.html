@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vehicle Booking</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Room Booking</a></li>
+                    <li><a href="packages.html">Tour Packages</a></li>
+                    <li><a href="flights.html">Flight Booking</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="vehicles" class="section">
+        <div class="container">
+            <h2>Book Your Vehicle</h2>
+            <form id="vehicle-booking-form" action="submit_vehicle.php" method="POST">
+                <!-- New fields for user details -->
+                <label for="user-name">Name:</label>
+                <input type="text" name="user-name" placeholder="Enter your name" required>
+                <br>
+                <label for="user-email">Email:</label>
+                <input type="email" name="user-email" placeholder="Enter your email" required>
+                <br>
+                <label for="user-phone">Phone Number:</label>
+                <input type="tel" name="user-phone" placeholder="Enter your phone number" required>
+                <br>
+
+                <!-- Existing fields for vehicle booking -->
+                <label for="vehicle-type">Select Vehicle Type:</label>
+                <select name="vehicle-type" required>
+                    <option value="">--Select--</option>
+                    <option value="car">Car</option>
+                    <option value="bus">Bus</option>
+                    <option value="bike">Bike</option>
+                </select>
+                <br>
+                <label for="pick-up-date">Pick-Up Date:</label>
+                <input type="date" name="pick-up-date" required>
+                <br>
+                <label for="drop-off-date">Drop-Off Date:</label>
+                <input type="date" name="drop-off-date" required>
+                <br>
+                <button class="btn-primary" type="submit">Book Vehicle</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Travel with Us. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

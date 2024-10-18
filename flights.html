@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Flight Booking</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicle Booking</a></li>
+                    <li><a href="rooms.html">Room Booking</a></li>
+                    <li><a href="packages.html">Tour Packages</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="flights" class="section">
+        <div class="container">
+            <h2>Book Your Flight</h2>
+            <form id="flight-booking-form" action="process_flight_booking.php" method="POST">
+                <!-- New fields for user details -->
+                <label for="user-name">Name:</label>
+                <input type="text" name="user-name" placeholder="Enter your name" required>
+                <br>
+                <label for="user-email">Email:</label>
+                <input type="email" name="user-email" placeholder="Enter your email" required>
+                <br>
+                <label for="user-phone">Phone Number:</label>
+                <input type="tel" name="user-phone" placeholder="Enter your phone number" required>
+                <br>
+
+                <!-- Existing fields for flight booking -->
+                <label for="from-location">From:</label>
+                <input type="text" name="from-location" placeholder="Departure city" required>
+                <br>
+                <label for="to-location">To:</label>
+                <input type="text" name="to-location" placeholder="Destination city" required>
+                <br>
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" name="departure-date" required>
+                <br>
+                <label for="return-date">Return Date (Optional):</label>
+                <input type="date" name="return-date">
+                <br>
+                <button class="btn-primary" type="submit">Book Flight</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Travel with Us. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

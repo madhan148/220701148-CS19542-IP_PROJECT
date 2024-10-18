@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Room Booking</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicle Booking</a></li>
+                    <li><a href="packages.html">Tour Packages</a></li>
+                    <li><a href="flights.html">Flight Booking</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="rooms" class="section">
+        <div class="container">
+            <h2>Book Your Room</h2>
+            <form id="room-booking-form" action="submit_room.php" method="POST">
+                <!-- New fields for user details -->
+                <label for="user-name">Name:</label>
+                <input type="text" name="user-name" placeholder="Enter your name" required>
+                <br>
+                <label for="user-email">Email:</label>
+                <input type="email" name="user-email" placeholder="Enter your email" required>
+                <br>
+                <label for="user-phone">Phone Number:</label>
+                <input type="tel" name="user-phone" placeholder="Enter your phone number" required>
+                <br>
+                
+                <!-- Existing fields for booking details -->
+                <label for="location">Select Location:</label>
+                <input type="text" name="location" placeholder="Enter city or hotel name" required>
+                <br>
+                <label for="check-in-date">Check-In Date:</label>
+                <input type="date" name="check-in-date" required>
+                <br>
+                <label for="check-out-date">Check-Out Date:</label>
+                <input type="date" name="check-out-date" required>
+                <br>
+                <button class="btn-primary" type="submit">Book Room</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Travel with Us. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

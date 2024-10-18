@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicle Booking</a></li>
+                    <li><a href="rooms.html">Room Booking</a></li>
+                    <li><a href="packages.html">Tour Packages</a></li>
+                    <li><a href="flights.html">Flight Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" action="submit_contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <br>
+                <button class="btn-primary" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Travel with Us. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
